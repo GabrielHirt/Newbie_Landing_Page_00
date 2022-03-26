@@ -1,0 +1,211 @@
+body {
+    margin: 0; 
+    padding: 0px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Red Hat Display';
+    background:hsl(225, 100%, 98%)
+    
+}
+
+#background{
+    height: 50vh;
+    position: absolute;
+    width: 1800px;
+    top:0; 
+    z-index:-1;
+    display: fixed;
+    background: url(./images/pattern-background-desktop.svg) no-repeat center/cover;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 416px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    z-index: 1;
+    background: white;
+
+
+    
+
+}
+
+img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+h1{
+    color:hsl(223, 47%, 23%);
+    font-weight: 900;
+    padding-top: 1em;
+
+
+}
+
+span{
+    color: hsl(224, 23%, 55%);
+}
+.container .order {
+    justify-content: center;
+    align-items: center;
+    padding: 0 2.5em;
+}
+
+
+
+.valuePlan{
+    
+    display: flex;
+    padding: .8em;
+
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    width: 70%;
+    border-radius: 8px;
+    margin: 1em;
+    transition: all 0.3s;
+    
+    
+
+}
+
+a:hover{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.icon{
+    display: flex;
+    width: 48px;
+    height: 48px;
+    margin-right: 1em;
+
+}
+
+.value{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.iconValue{
+    display: flex;
+  
+}
+
+
+button{
+    width: 75%;
+    padding: 1em 0;
+    margin: 1em 0;
+    background: hsl(245, 75%, 52%);
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    border: none;
+    transition: all 0.3s;
+    
+
+}
+
+button:hover{
+    box-shadow: hsl(245, 75%, 52%, 0.2) 0px 20px 20px;
+    color: white;
+    font-weight: 900px;
+    border: none;
+}
+
+.aCancel{
+    margin: 1em 0 2em 0;
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    transition: all .3s;
+}
+
+
+.aCancel:hover{
+    color: black;
+}
+
+@media (max-width: 300px){
+
+
+    body{
+        display: block;
+        width: 100wv;
+        height: 100hv;
+
+    }
+
+    #background{
+        overflow: hidden;
+        display:none;
+    }
+
+    .iconValue{
+        flex-wrap: wrap;
+    }
+
+    .container{
+        box-shadow: 0px 0px 0px 0px;
+        border-radius: 0px;
+       
+    }
+
+    img{
+        border-radius: 0px;
+    }
+
+    .valuePlan{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+    }
+
+    .icon{
+        margin-left: 1em;
+    }
+
+    .iconValue{
+        margin-left: 2em;
+    }
+
+    .a{
+        margin-left: 2em;
+    }
+}
+
+
+@media (max-width: 417px){
+
+
+    body{
+        display: block;
+        width: 100wv;
+        height: 100hv;
+
+    }
+
+    img{
+        border-radius: 0px;
+    }
+
+}
