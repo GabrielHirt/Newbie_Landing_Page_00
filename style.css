@@ -16,7 +16,7 @@ body {
 #background{
     height: 50vh;
     position: absolute;
-    width: 1800px;
+    width: 100%;
     top:0; 
     z-index:-1;
     display: fixed;
@@ -48,7 +48,7 @@ img{
 h1{
     color:hsl(223, 47%, 23%);
     font-weight: 900;
-    padding-top: 1em;
+    padding-top: 0em;
 
 
 }
@@ -111,7 +111,7 @@ a:hover{
 button{
     width: 75%;
     padding: 1em 0;
-    margin: 1em 0;
+    margin: 0em 0;
     background: hsl(245, 75%, 52%);
     color: white;
     font-size: 16px;
@@ -131,7 +131,7 @@ button:hover{
 }
 
 .aCancel{
-    margin: 1em 0 2em 0;
+    margin: 1em 0 1em 0;
     text-decoration: none;
     color: hsl(224, 23%, 55%);
     font-weight: 700;
@@ -185,7 +185,7 @@ button:hover{
     }
 
     .iconValue{
-        margin-left: 2em;
+        margin-left: 1em;
     }
 
     .a{
@@ -196,16 +196,15 @@ button:hover{
 
 @media (max-width: 417px){
 
-
-    body{
-        display: block;
-        width: 100wv;
-        height: 100hv;
-
+    .container{
+        max-width: 300px;
     }
 
-    img{
-        border-radius: 0px;
-    }
+  
+    
+
+
+
+
 
 }
