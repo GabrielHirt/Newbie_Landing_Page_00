@@ -147,10 +147,10 @@ button:hover{
 
 
     body{
-        display: block;
+        display: flex;
         width: 100wv;
         height: 100hv;
-
+        align-content: flex-start;
     }
 
     #background{
